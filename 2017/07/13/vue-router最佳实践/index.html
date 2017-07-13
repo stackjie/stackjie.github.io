@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="vue-router已经是开发vue项目不可缺少的核心插件，本文介绍了vue-router在自己项目经验中的一些最佳实践和总结。">
+<meta name="description" content="vue-router已经是开发vue项目中不可缺少的核心插件，本文介绍了vue-router自己在项目经验中的一些最佳实践和总结。 keep-alive &amp;amp; transitionkeep-alive和transition做为vue中比较重要也比较常用的api可以和vue-router提供的router-view组件配合使用，当路由切换时keep-alive可以缓存router-view中生">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue-router最佳实践">
 <meta property="og:url" content="http://yoursite.com/2017/07/13/vue-router最佳实践/index.html">
 <meta property="og:site_name" content="秋名山的秋山澪">
-<meta property="og:description" content="vue-router已经是开发vue项目不可缺少的核心插件，本文介绍了vue-router在自己项目经验中的一些最佳实践和总结。">
-<meta property="og:updated_time" content="2017-07-13T16:00:25.000Z">
+<meta property="og:description" content="vue-router已经是开发vue项目中不可缺少的核心插件，本文介绍了vue-router自己在项目经验中的一些最佳实践和总结。 keep-alive &amp;amp; transitionkeep-alive和transition做为vue中比较重要也比较常用的api可以和vue-router提供的router-view组件配合使用，当路由切换时keep-alive可以缓存router-view中生">
+<meta property="og:updated_time" content="2017-07-13T16:23:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue-router最佳实践">
-<meta name="twitter:description" content="vue-router已经是开发vue项目不可缺少的核心插件，本文介绍了vue-router在自己项目经验中的一些最佳实践和总结。">
+<meta name="twitter:description" content="vue-router已经是开发vue项目中不可缺少的核心插件，本文介绍了vue-router自己在项目经验中的一些最佳实践和总结。 keep-alive &amp;amp; transitionkeep-alive和transition做为vue中比较重要也比较常用的api可以和vue-router提供的router-view组件配合使用，当路由切换时keep-alive可以缓存router-view中生">
 
 
 
@@ -321,8 +321,9 @@
       
 
       
-        <p>vue-router已经是开发vue项目不可缺少的核心插件，本文介绍了vue-router在自己项目经验中的一些最佳实践和总结。</p>
-
+        <p>vue-router已经是开发vue项目中不可缺少的核心插件，本文介绍了vue-router自己在项目经验中的一些最佳实践和总结。</p>
+<h3 id="keep-alive-amp-transition"><a href="#keep-alive-amp-transition" class="headerlink" title="keep-alive &amp; transition"></a>keep-alive &amp; transition</h3><p><code>keep-alive</code>和<code>transition</code>做为vue中比较重要也比较常用的api可以和vue-router提供的<code>router-view</code>组件配合使用，当路由切换时<code>keep-alive</code>可以缓存<code>router-view</code>中生成的vue组件，<code>transition</code>提供路由改变时动画过渡的钩子。</p>
+<h4 id="keep-alive"><a href="#keep-alive" class="headerlink" title="keep-alive"></a>keep-alive</h4>
       
     </div>
 
@@ -413,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -458,6 +468,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#keep-alive-amp-transition"><span class="nav-number">1.</span> <span class="nav-text">keep-alive & transition</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#keep-alive"><span class="nav-number">1.1.</span> <span class="nav-text">keep-alive</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
