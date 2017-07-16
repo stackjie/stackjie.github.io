@@ -552,7 +552,7 @@ Unicode编码表中用键盘输出后肉眼可见的字符
               
                 
                 <a class="post-title-link" href="/2017/07/13/vue-router最佳实践/" itemprop="url">
-                  vue-router最佳实践
+                  vue-router与keep-alive的最佳实践
                 </a>
               
             
@@ -617,8 +617,8 @@ Unicode编码表中用键盘输出后肉眼可见的字符
       
         
           
-          vue-router已经是开发vue项目中不可缺少的核心插件，本文是自己在项目经验中的一些vue-router的最佳实践和网上的一些博文结合的总结。
-keep-alivekeep-alive做为vue中比较重要也比较常用的api可以和vue-router提供的router-view组件配合使用，当路
+          keep-alive做为vue中比较重要也比较常用的api可以和vue-router提供的router-view组件配合使用，当路由切换时keep-alive可以缓存router-view中生成的vue组件避免重复渲染。
+keep-alive12345678910&lt;template&gt;  
           ...
           <!--noindex-->
           <div class="post-button text-center">
